@@ -1,0 +1,5 @@
+a
+{
+onMouseOver="this.style.backgroundImage='url(image/fg_top04.jpg)'";
+onMouseOut="this.style.backgroundImage=''";
+}

@@ -1,0 +1,64 @@
+/* CSS Document */
+
+#main{
+width:750px;
+height:auto;
+background-color:#FFFFFF;
+}
+
+
+#left1{
+width:375px;
+height:500px;
+float:left;
+background:#CCCCCC;
+}
+
+#right1{
+width:375px;
+height:500px;
+float:left;
+background:#CCCCCC;
+}
+#picture{
+width:365px;
+height:220px;
+background:#FFFFFF;
+}
+#name,#price,#num{
+width:365px;
+height:50px;
+border:1px solid #CCCCCC;
+background:#FFFFFF;
+font-family: "华文行楷";
+}
+#introduce{
+width:365px;
+height:130px;
+border:1px solid #CCCCCC;
+font-family: "华文行楷";
+background:#FFFFFF;
+}
+#page{
+width:750px;
+height:auto;
+background-color:#CCCCCC;
+color:#FFFFFF;
+}
+
+#clear{
+clear:both;
+}
+
+#priceleft
+{
+width:250px;
+height:auto;
+float:left;
+}
+#priceright
+{
+width:100px;
+height:auto;
+float:right;
+}

@@ -1,0 +1,78 @@
+/* CSS Document */
+#main{
+width:745px;
+height:auto;
+}
+
+#name,#introduce{
+width:740px;
+height:auto;
+background:#FFFFFF;
+border:1px solid #CCCCCC;
+font-family: "华文行楷";
+font-size: 23px;
+color:"black";
+}
+
+#left{
+width:240px;
+height:28p;
+float:left;
+border:1px solid #CCCCCC;
+}
+
+#price,#num{
+width:245px;
+height:70px;
+background:#FFFFFF;
+border:1px solid #CCCCCC;
+font-family: "华文行楷";
+color:"blue";
+text-align:center;
+
+}
+#num{
+font-size: 23px;
+}
+#buy{
+width:245px;
+height:90px;
+background:#FFFFFF;
+border:1px solid #CCCCCC;
+font-family: "华文行楷";
+}
+
+#middle{
+width:740px;
+height:auto;
+border:1px solid #CCCCCC;
+}
+#image{
+width:490px;
+height:300px;
+float:left;
+}
+#detail{
+width:740px;
+height:auto;
+background-color:#FFFFFF;
+color:#FFFFFF;
+}
+#td{
+width:80px;
+height:40px;
+float:left;
+font-family: "华文行楷";
+text-align:center;
+color:"blue";
+}
+#text{
+width:740px;
+height:250px;
+}
+#clear{
+clear:both;
+}
+
+
+

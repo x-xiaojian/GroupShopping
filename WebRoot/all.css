@@ -1,0 +1,35 @@
+/* CSS Document */
+body {
+background-color:#E2F1F3;
+text-align:center;
+margin:0;
+}
+
+
+#main,#middle{
+width:1000px;
+height:auto;
+background-color:#E2F1F3;
+}
+
+#top,#down{
+width:1000px;
+height:auto;
+}
+
+#left{
+width:740px;
+height:auto;
+float:left;
+border:3px solid #CCCCCC;
+}
+
+#right{
+clear:both;
+width:240px;
+height:auto;
+float:right;
+}
+#clear{
+clear:both;
+}

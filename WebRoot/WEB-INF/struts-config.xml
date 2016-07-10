@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="memberForm" type="com.tg.form.MemberForm" />
+    <form-bean name="goodsForm" type="com.tg.form.GoodsForm" />
+    <form-bean name="linkForm" type="com.tg.form.LinkForm" />
+    <form-bean name="orderForm" type="com.tg.form.OrderForm" />
+    <form-bean name="orderDetailForm" type="com.tg.form.OrderDetailForm" />
+    <form-bean name="cityForm" type="com.tg.form.CityForm" />
+  </form-beans>
+  <action-mappings>
+
+    <!-- 会员处理 -->
+    <action name="memberForm" path="/memberAction" scope="request" type="com.tg.web.MemberAction"
+     validate="true">
+      <forward name="checkMember" path="/fg-checkMemberResult.jsp" />
+      <forward name="selectMember" path="/bg-selectMember.jsp" />
+      <forward name="deleteMember" path="/bg-resultMember.jsp" />
+      <forward name="selectOneMember" path="/bg-selectOneMember.jsp" />  
+      <forward name="operationMember" path="/fg_memberResult.jsp" />
+      <forward name="selectOneMemberHead" path="/fg-updateMember.jsp" />
+      <forward name="cityForward" path="/fg_register.jsp"/>
+    </action>
+    
+    <!-- 商品处理 -->
+    <action name="goodsForm" path="/goodsAction" scope="request" type="com.tg.web.GoodsAction" 
+    validate="true">
+    <forward name="selectFirst" path="/fg_firstGoods.jsp"/>
+    <forward name="selectOneGoods" path="/fg_selectOneGoods.jsp"/>
+    <forward name="cityForward" path="/bg_goodInsert.jsp"/>
+    <forward name="goodsOperation" path="/fg_firstGoods.jsp"/>
+    <forward name="goodSelectTypeHead" path="/fg_firstGoods.jsp"/>
+    <forward name="getOneGoods" path="/cart_add.jsp"/> 
+     <forward name="selectByCity" path="/fg_GoodsByCity.jsp"/>
+     <forward name="selectContent" path="/bg-goodSelectContent.jsp" /> 
+    
+    
+    <forward name="goodSelect" path="/bg-goodSelect.jsp" />      
+    <forward name="selectContent" path="/bg-goodSelectContent.jsp" />
+    <forward name="goodsOperation" path="/bg-goodsResult.jsp" />
+    <forward name="goodForward" path="/bg-goodInsert.jsp" />
+    <forward name="managerFreePirce" path="/bg-goodsFreePirce.jsp" />
+    
+    </action>
+    <!-- 管理员处理 -->
+    <action name="managerForm" path="/managerAction" scope="request" type="com.tg.web.ManagerAction" validate="true">
+      <forward name="managerSelect" path="/bg-managerSelect.jsp" />
+      <forward name="managerInsert" path="/bg-managerInsert.jsp" />      
+      <forward name="checkResult" path="/bg-landResult.jsp" />    
+      <forward name="managerUpdatePassword" path="/bg-UpdatePswResult.jsp" />   
+    </action> 
+   
+     <!-- 城市处理 -->
+    <action name="cityForm" path="/cityAction" scope="request" type="com.tg.web.CityAction" validate="true">
+     <forward name="cityselect" path="/index3.jsp"/>    
+    </action> 
+    
+    <!-- 公告处理 -->
+    <action name="afficheForm" path="/afficheAction" scope="request" type="com.tg.web.AfficheAction" validate="true">
+      <forward name="afficheSelect" path="/bg-afficheSelect.jsp" />
+      <forward name="afficheSelectOne" path="/bg-afficheUpdate.jsp" />
+      <forward name="afficheContent" path="/bg-afficheContent.jsp" />
+    </action>   
+    
+    
+    <!-- 友情链接处理 -->
+    <action name="linkForm" path="/linkAction" scope="request" type="com.tg.web.LinkAction" validate="true">
+      <forward name="linkSelect" path="/bg-linkSelect.jsp" />
+    </action>
+    
+    <!-- 订单处理 -->
+    <action name="orderForm" path="/orderAction" scope="request" type="com.tg.web.OrderAction" validate="true">
+      <forward name="selectOrder" path="/bg-orderSelect.jsp" />
+      <forward name="selectOneOrder" path="/bg-orderContent.jsp" />
+    </action> 
+  </action-mappings>  
+
+  <controller processorClass="com.tg.tools.SelfRequestProcessor" />
+  
+</struts-config>
